@@ -5,15 +5,20 @@ import path from 'path'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: './',
+  base: '/',
   resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src')
-    }
+    alias: [
+      {
+        find: '@',
+        replacement: path.resolve(__dirname, './src')
+      }
+    ]
   },
   build: {
     outDir: 'dist',
     emptyOutDir: true,
-    assetsInclude: ['**/*.svg']
+    rollupOptions: {
+      external: [/^@\/assets\/.*/],
+    }
   }
 })
