@@ -1,7 +1,7 @@
 import { Box, Button } from '@mui/material';
 import { useLocation } from 'react-router-dom';
 
-// Import SVGs
+// Import SVGs using relative paths
 import home from '../../assets/home.svg';
 import search from '../../assets/search.svg';
 import checkCircle from '../../assets/check-circle.svg';
