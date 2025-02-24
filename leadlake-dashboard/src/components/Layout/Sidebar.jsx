@@ -2,13 +2,13 @@ import { Box, Button } from '@mui/material';
 import { useLocation } from 'react-router-dom';
 
 // Import SVGs
-import home from '@/assets/home.svg';
-import search from '@/assets/search.svg';
-import checkCircle from '@/assets/check-circle.svg';
-import vector from '@/assets/vector.svg';
-import settings from '@/assets/settings.svg';
-import help from '@/assets/help.svg';
-import university from '@/assets/university.svg';
+import home from '../../assets/home.svg';
+import search from '../../assets/search.svg';
+import checkCircle from '../../assets/check-circle.svg';
+import vector from '../../assets/vector.svg';
+import settings from '../../assets/settings.svg';
+import help from '../../assets/help.svg';
+import university from '../../assets/university.svg';
 
 const sidebarButtonStyles = {
   justifyContent: 'flex-start',
